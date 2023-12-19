@@ -2,8 +2,8 @@
 // config.php
 $host = "localhost";
 $port = "5432";
-$dbname = "nombre_de_tu_base_de_datos";
-$user = "root";
+$dbname = "Admision";
+$user = "postgres";
 $password = "27132419";
 
 $dsn = "pgsql:host=$host;port=$port;dbname=$dbname;user=$user;password=$password";

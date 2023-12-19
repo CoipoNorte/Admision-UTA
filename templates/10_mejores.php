@@ -1,7 +1,6 @@
 <?php
-include_once '../includes/head.php';
-include_once '../includes/header.php';
-include_once '../util/verificar_sesion.php';
+include_once '../util/verificar_sesion.php'; // Actualiza la ruta para el archivo verificar_sesion.php
+include_once '../includes/head.php'; // Actualiza la ruta para el archivo head.php
 ?>
 <!DOCTYPE html>
 <html>
@@ -10,12 +9,15 @@ include_once '../util/verificar_sesion.php';
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
+
+<?php include_once '../includes/header.php'; // Actualiza la ruta para el archivo header.php ?>
+
     <h1>Puntajes Máximos por Carrera (Top 10)</h1>
     <div class="container">
 
     <?php
         // Incluir archivo para la conexión a la base de datos
-        include_once '../config.php';
+        include_once '../config.php'; // Actualiza la ruta para el archivo config.php
 
         // Consulta SQL
         $query = "SELECT
@@ -47,14 +49,14 @@ include_once '../util/verificar_sesion.php';
                   </tr>';
         }
         echo '</tbody></table>';
-        ?>
+    ?>
     </div>
 
     <!-- Botón "Regresar" -->
     <div class="text-center mt-4 pt-5">
-        <a class="btn btn-warning btn-uta-orng" type="submit" href="botones.php">Regresar</a><br>
+        <a class="btn btn-warning btn-uta-orng" type="submit" href="botones.php">Regresar</a><br> <!-- Actualiza la ruta para el botón "Regresar" -->
     </div><br>
 
-    <?php include_once '../includes/footer.php'; ?>
+    <?php include_once '../includes/footer.php'; // Actualiza la ruta para el archivo footer.php ?>
 </body>
 </html>

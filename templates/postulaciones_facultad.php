@@ -1,7 +1,6 @@
 <?php
-include_once '../includes/head.php';
-include_once '../includes/header.php';
 include_once '../util/verificar_sesion.php';
+include_once '../includes/head.php';
 ?>
 <!DOCTYPE html>
 <html>
@@ -11,6 +10,7 @@ include_once '../util/verificar_sesion.php';
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 </head>
 <body>
+<?php include_once '../includes/header.php'; ?>
     <h1>Postulantes por Facultad</h1>
     <div class="container">
         <?php

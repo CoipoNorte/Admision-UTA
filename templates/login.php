@@ -1,10 +1,12 @@
 <?php
 include_once '../util/verificar_cookie.php';
 include_once '../includes/head.php';
-include_once '../includes/header.php'; 
 ?>
 
 <body class="align-items-center">
+
+<?php include_once '../includes/header.php'; ?>
+
 <main class="main-content">
     <form class="form-signin text-center" action="../util/login_process.php" method="post">
 

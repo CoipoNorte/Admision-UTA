@@ -1,16 +1,18 @@
 <?php
-include_once '../includes/head.php';
-include_once '../includes/header.php';
 include_once '../util/verificar_sesion.php';
+include_once '../includes/head.php';
 ?>
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Tabla y Gráfico de Postulantes por Región</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 </head>
+
 <body>
+    <?php include_once '../includes/header.php'; ?>
     <h1>Postulantes por Región</h1>
     <div class="container">
         <?php
@@ -49,7 +51,9 @@ include_once '../util/verificar_sesion.php';
 
     <!-- Gráfico circular -->
     <div class="container">
-     <center>   <h2>Gráfico de Postulantes por Región </h2></center>
+        <center>
+            <h2>Gráfico de Postulantes por Región </h2>
+        </center>
         <div id="pie-chart"></div>
     </div>
 
@@ -78,4 +82,5 @@ include_once '../util/verificar_sesion.php';
 
     <?php include_once '../includes/footer.php'; ?>
 </body>
+
 </html>

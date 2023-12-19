@@ -1,7 +1,6 @@
 <?php
-include_once '../includes/head.php';
-include_once '../includes/header.php';
 include_once '../util/verificar_sesion.php';
+include_once '../includes/head.php';
 ?>
 <!DOCTYPE html>
 <html>
@@ -10,6 +9,7 @@ include_once '../util/verificar_sesion.php';
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
+    <?php include_once '../includes/header.php'; ?>
     <h1>Postulantes por Colegio (Región 15)</h1>
     <div class="container">
         <?php

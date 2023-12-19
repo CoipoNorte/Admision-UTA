@@ -1,11 +1,13 @@
 <?php
-include_once '../includes/head.php';
-include_once '../includes/header.php';
 include_once '../util/verificar_sesion.php';
 include_once '../util/cierre_sesion.php';
+include_once '../includes/head.php';
 ?>
 
 <body class="align-items-stretch">
+
+    <?php include_once '../includes/header.php'; ?>
+    
     <main class="flex-grow-1 text-center p-5">
         <h1 class="h3 mb-3 fw-normal">Botones</h1>
 

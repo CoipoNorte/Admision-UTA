@@ -1,6 +1,21 @@
 <?php
-// Lista de nombres de archivos de plantillas en la carpeta "botones"
+// Listas de nombres de archivos de plantillas en la carpeta "botones"
 $plantillaNombres = [
+    "Mejores 10",
+    "Dependencia postulantes",
+    "Detalles",
+    "Etnias Postulantes",
+    "Genero Carrera",
+    "Genero Facultad",
+    "Ingreso por Establecimiento",
+    "Ingresos Establecimientos",
+    "Origen Postulante",
+    "Postulaciones Facultad",
+    "Postulantes Genero",
+    "Postulantes Region",
+];
+
+$plantillaVistas = [
     "10_mejores",
     "dependencia_postulantes",
     "detalles",
@@ -14,11 +29,13 @@ $plantillaNombres = [
     "postulantes_genero",
     "postulantes_region",
 ];
+
 // Itera sobre la lista y genera los enlaces
-foreach ($plantillaNombres as $nombre) :
+for ($i = 0; $i < count($plantillaNombres); $i++) :
+    $nombreVista = $plantillaVistas[$i];
 ?>
     <div class="col">
         <!-- Construye el enlace con el nombre de la plantilla actual -->
-        <a class="btn btn-warning btn-uta-orng" href="<?php echo $nombre; ?>.php"><?php echo $nombre; ?></a>
+        <a class="btn btn-warning btn-uta-orng" href="<?php echo $nombreVista; ?>.php"><?php echo $plantillaNombres[$i]; ?></a>
     </div>
-<?php endforeach; ?>
+<?php endfor; ?>

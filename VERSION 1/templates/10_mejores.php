@@ -34,28 +34,36 @@ include_once '../includes/head.php'; // Actualiza la ruta para el archivo head.p
         $data = $result->fetchAll(PDO::FETCH_ASSOC);
 
         // Mostrar los resultados en una tabla usando Bootstrap
-        echo '<table class="table">
+        echo '
+        <div class="table-responsive pb-5">
+            <table class="table table-striped table-sm"
                 <thead>
                     <tr>
                         <th>Nombre de Carrera</th>
                         <th>Puntaje Máximo</th>
                     </tr>
-                </thead>
+                </thead
                 <tbody>';
+
         foreach ($data as $row) {
-            echo '<tr>
-                    <td>' . $row['nombre_carrera'] . '</td>
-                    <td>' . $row['puntaje_maximo'] . '</td>
-                  </tr>';
+        echo '
+                    <tr>
+                        <td>' . $row['nombre_carrera'] . '</td>
+                        <td>' . $row['puntaje_maximo'] . '</td>
+                    </tr>';
         }
-        echo '</tbody></table>';
+        echo '
+                </tbody>
+            </table>
+        </div>';
     ?>
     </div>
 
     <!-- Botón "Regresar" -->
     <div class="text-center mt-4 pt-5">
-        <a class="btn btn-warning btn-uta-orng" type="submit" href="botones.php">Regresar</a><br> <!-- Actualiza la ruta para el botón "Regresar" -->
-    </div><br>
+        <a class="btn btn-warning btn-uta-orng" type="submit" href="botones.php">Regresar</a>
+    </div>
+    <br>
 
     <?php include_once '../includes/footer.php'; // Actualiza la ruta para el archivo footer.php ?>
 </body>

@@ -1,0 +1,103 @@
+body {
+  background-color: #f5f5f5;
+}
+
+/** Sidebar */
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  /* rtl:remove */
+  left: 0;
+  z-index: 100;
+  /* Behind the navbar */
+  padding: 48px 0 0;
+  /* Height of navbar */
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+  background-color: #1C1C3B;
+}
+
+@media (max-width: 767.98px) {
+  .sidebar {
+      top: 1rem;
+  }
+}
+
+.sidebar .nav-link {
+  color: #ECAE2F;
+  font-weight: 500;
+}
+
+.sidebar .nav-link:hover .feather,
+.sidebar .nav-link.active .feather {
+  color: inherit;
+}
+
+/** Navbar */
+
+.navbar .navbar-toggler {
+  right: 1rem;
+  background-color: #ECAE2F;
+}
+
+.btn-warning,
+.btn-danger {
+  color: white;
+}
+
+.barra {
+  width: 100%;
+  color: white;
+  text-align: center;
+  font-weight: 500;
+}
+
+.navbar {
+  background-color: #1C1C3B;
+}
+
+.pie-pag {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 12px;
+  /* Ajusta según sea necesario */
+  background-color: #1C1C3B;
+  color: white;
+  text-align: center;
+  font-weight: 500;
+}
+
+.imagen-logo {
+  max-width: 100%;
+  max-height: 50px;
+}
+
+.main-content {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.form-signin .checkbox {
+  font-weight: 400;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}

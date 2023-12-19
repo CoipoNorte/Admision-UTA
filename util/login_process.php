@@ -23,7 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $usuario = $stmt->fetch(PDO::FETCH_ASSOC);
 
         // Verificar si el usuario existe y la contraseña es válida
-        if ($usuario && $contrasena === $usuario['contrasena']) {
+        if ($usuario && password_verify($contrasena, $usuario['contrasena'])) {
             // Iniciar sesión (puedes usar sesiones PHP)
             session_start();
             $_SESSION['usuario_id'] = $usuario['id'];
@@ -43,7 +43,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
     } catch (PDOException $e) {
         // Mostrar un mensaje de error y redirigir a la página de inicio de sesión
-        echo "<script>alert('Error de base de datos.'); window.location.href = '../templateslogin.php';</script>";
+        echo "<script>alert('Error de base de datos.'); window.location.href = '../templates/login.php';</script>";
         exit;
     }
 }

@@ -10,8 +10,8 @@ include_once '../includes/head.php';
     <main class="container pt-5">
         <div class="row justify-content-center form-signin text-center">
             <form class="col-sm-8 col-md-8 col-lg-4" action="../util/login_process.php" method="post">
-                <img class="mb-4" src="../assets/img/uta_vertical.png" alt="UNIVERSIDAD DE TARAPACA" width="75%"
-                    height="40%">
+                <img class="mb-4" src="../assets/img/uta_vertical.png" alt="UNIVERSIDAD DE TARAPACA" width="50%"
+                    height="30%">
 
                 <h1 class="h3 mb-3 fw-normal">Iniciar sesión</h1>
 

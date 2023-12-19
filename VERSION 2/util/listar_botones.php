@@ -34,7 +34,7 @@ $plantillaVistas = [
 for ($i = 0; $i < count($plantillaNombres); $i++) :
     $nombreVista = $plantillaVistas[$i];
 ?>
-    <li class="nav-item mb-1">
+    <li class="nav-item">
         <a class="nav-link" href="<?php echo $nombreVista; ?>.php"><?php echo $plantillaNombres[$i]; ?></a>
     </li>
 

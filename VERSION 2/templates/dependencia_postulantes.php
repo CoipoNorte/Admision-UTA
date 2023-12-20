@@ -15,19 +15,26 @@ include_once '../includes/head.php';
 
             <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
 
-                <div
-                    class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-4 pb-2 mb-3 border-bottom">
+                <!--TITULO-->
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
                     <h1 class="h2">Dependencia de los postulantes</h1>
+                    <div class="btn-toolbar mb-2 mb-md-0">
+                        <div class="btn-group me-2">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Exportar</button>
+                        </div>
+                        <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">
+                            <span data-feather="calendar"></span>
+                            Fecha
+                        </button>
+                    </div>
                 </div>
 
-                <!-- Gráfico de barras -->
-                <div class="container">
-                    <center><h2>Gráfico</h2></center>
-                    <div id="bar-chart"></div>
-                </div>
+                <!--GRAFICO-->
+                <h1 class="h2">Gráfico</h1>
+                <div id="bar-chart"></div>
 
-                <h2>Tabla</h2>
-
+                <!--TABLA-->
+                <h1 class="h2">Tabla</h1>
                 <?php
                 // Incluir archivo para la conexión a la base de datos
                 include_once '../config.php';
@@ -70,7 +77,6 @@ include_once '../includes/head.php';
 
     <?php include_once '../includes/foot.php'; ?>
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-
     <script>
         // Obtener datos para el gráfico de barras
         var dependencias = <?php echo json_encode(array_column($data, 'dependencia')); ?>;

@@ -11,7 +11,7 @@ include_once '../includes/head.php';
 </head>
 <body>
     <?php include_once '../includes/header.php'; ?>
-    <h1>Nacionalidades de los postulantes </h1>
+    <h1>Nacionalidades de los postulantes</h1>
     <div class="container">
         <?php
         // Incluir archivo para la conexión a la base de datos

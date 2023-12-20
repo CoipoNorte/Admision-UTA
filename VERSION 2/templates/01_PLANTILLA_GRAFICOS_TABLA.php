@@ -31,35 +31,14 @@ include_once '../includes/head.php';
 
                 <!--GRAFICO-->
                 <h1 class="h2">Grafico</h1>
-                <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas>
+                <canvas class="my-4 w-100" id="myChart" width="900" height="200"></canvas>
 
                 <!--TABLA-->
                 <h1 class="h2">Tabla</h1>
+                
                 <div class="table-responsive pb-5">
                     <table class="table table-striped table-sm">
-                        <thead>
-                            <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">Header</th>
-                                <th scope="col">Header</th>
-                                <th scope="col">Header</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>1,001</td>
-                                <td>random</td>
-                                <td>data</td>
-                                <td>placeholder</td>
-                            </tr>
-                            <tr>
-                                <td>1,002</td>
-                                <td>placeholder</td>
-                                <td>irrelevant</td>
-                                <td>visual</td>
-                            </tr>
-                        </tbody>
-                    </table>
+         
                 </div><br>
 
             </main>

@@ -43,7 +43,6 @@ include_once '../includes/head.php';
                                 <th scope="col">Header</th>
                                 <th scope="col">Header</th>
                                 <th scope="col">Header</th>
-                                <th scope="col">Header</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -52,14 +51,12 @@ include_once '../includes/head.php';
                                 <td>random</td>
                                 <td>data</td>
                                 <td>placeholder</td>
-                                <td>text</td>
                             </tr>
                             <tr>
                                 <td>1,002</td>
                                 <td>placeholder</td>
                                 <td>irrelevant</td>
                                 <td>visual</td>
-                                <td>layout</td>
                             </tr>
                         </tbody>
                     </table>

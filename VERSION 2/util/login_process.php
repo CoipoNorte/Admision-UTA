@@ -34,7 +34,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             }
 
             // Redirigir al usuario a la página deseada
-            header('Location: ../templates/1_PLANTILLA.php');
+            header('Location: ../templates/01_PLANTILLA_GRAFICOS_TABLA.php');
             exit;
         } else {
             // Mostrar un mensaje de error y redirigir a la página de inicio de sesión
